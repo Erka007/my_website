@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/fact.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+    <style>
+        header {
+            display: flex;
+            background-color: #000;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 200px;
+            /* padding: 50px; */
+        }
+        .main-logo {
+            width: 25%;
+            height: 100%;
+        }
+        .main-logo img {
+            width: 170%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .links {
+            display: flex;
+            justify-content: space-between;
+            gap: 100px;
+            margin-left: 100px;
+        }
+        .links a {
+            text-decoration: none;
+        }
+        .links h1 {
+            color: #eee;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+        }
+        .links h1:hover {
+            color: grey;
+            cursor: grab;
+        }
+        .image {
+            width: 30%;
+            height: 100%;
+        }
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            align-self: end;
+            padding-left: 170px;
+            overflow: hidden;
+        }
+        /* .timer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: none;
+            width: 400px;
+            height: 100px;
+            margin-left: 200px;
+            gap: 8px;
+        } */
+        /* .timer span {
+            color: #fff;
+            font-size: 36px;
+        } */
+        .Copyright {
+            display: flex;
+            width: 100%;
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+        }
+        .Copyright h1 {
+            color: #fff;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="main-logo">
+          <img src="./godfather.jpg" alt="">
+      </div>
+      <div class="links">
+          <a href="./Home.html"><h1>Танилцуулга</h1></a>
+          <a href="./roles.html"><h1>Дүрүүд</h1></a>
+          <a href="#"><h1>Баримтууд</h1></a>
+      </div>
+      <div class="timer">
+          <span id="hour">00</span>
+          <span>:</span>
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+          <span id="session">AM</span>
+      </div>
+      <div class="image"> 
+          <img src="./zurag.jpg" alt="">
+      </div>
+  </header>
+    <div class="header">
+      <h3>СОНИРХОЛТОЙ БАРИМТУУД</h3>
+    </div>
+    <div class="my-slider">
+      <div class="box">
+        <img src="./Documents/Brando 2.jpg" alt="" />
+        <p class="text">
+          Марлон Брандо, Аль Пачиног тоглуулахаас анхандаа татгалзаж байжээ.
+        </p>
+      </div>
+      <div class="box">
+        <img src="/Documents/Pacino 1.jpg" alt="" />
+        <p class="text">
+          Жүжигчин Аль Пачино нэгэн ярилцлагандаа,” Намайг амьд байгаа цагт,
+          Загалмайлсан эцэг киног давах шилдэг кино гарахгүй” хэмээн хэлсэн
+          байдаг.
+        </p>
+      </div>
+      <div class="box">
+        <img src="/Documents/Cappola.jpg" alt="" />
+        <p class="text">
+          Найруулагч Франсис Форд Коппола “Warner Bros” компанид 400 мянган
+          ам.долларын өрөнд орсон байсан учир аргагүйн эрхэнд “Загалмайлсан
+          эцэг”-ийг найруулахаар болжээ.
+        </p>
+      </div>
+      <div class="box">
+        <img src="/Documents/Deniro.jpg" alt="" />
+        <p class="text">
+          Роберт Де Ниро Соннигийн дүрд шалгарсан боловч Коппола эцэст нь Жеймс
+          Кааныг энэхүү дүрд тоглуулсан. Харин Де Ниро "Загалмайлсан эцэг: II
+          хэсэг" кинонд залуу Вито Корлеонегийн дүрд гарч, энэ бүтээлээрээ
+          шилдэг эрэгтэй туслах дүрийн Оскарын шагнал хүртсэн.
+        </p>
+      </div>
+      <div class="box">
+        <img src="/Documents/academy-awards-statues.jpg" alt="" />
+        <p class="text">
+          Загалмайлсан эцэг кино оскарын нийт 28 төрөлд нэр дэвшиж үүнээс 9
+          оскарыг авч чадсан. Үүнээс хамгийн оргил шагнал болох шилдэг киног
+          Загалмайлсан эцэг 1, 2 авч байжээ.
+        </p>
+      </div>
+      <div class="box">
+        <img src="/Documents/Sofia younger.png" alt="" />
+        <p class="text">
+          Кино найруулагч Фрэнсис Форд Копполагын охин София Коппола нь
+          “Загалмайлсан эцэг” киноны 1, 2, 3 -р ангид тоголсон байдаг. Түүний
+          анхны дүр уг киноны 1-р ангид Конигийн нярай охины дүр тоглосон бол
+          2-р ангид Вито Корлеоне-ийн бага насны дүр, 3-р ангид Майкл
+          Корлеоне-ийн охины дүрд тус тус тогложээ.
+        </p>
+      </div>
+      <div class="box">
+        <img src="/Documents/Appache.jpg" alt="" />
+        <p class="text">
+          Марлон Брандо Оскарын шилдэг эрэгтэй дүрийн шагналаас татгалзсан хоёр
+          дахь хүн болов. 1973 оны 3-р сарын 5-ны орой Рожер Мур Брандогийн
+          нэрийг "Шилдэг эрэгтэй жүжигчин"-ээр дуудах үед тайзан дээр Апачи
+          хувцастай, намбалаг, урт үстэй эмэгтэй ирэв. Тэрээр Марлон Брандог
+          төлөөлж энэхүү шагналыг авсан. Марлон Брандо Еврэй, Африк гаралтай
+          Америкчууд болон Нутгийн уугуул иргэдийн эрхийн төлөө дуугардаг,
+          дэмжигч нэгэн байв.
+        </p>
+      </div>
+    </div>
+    <div class="v-container">
+      <div class="box1">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/jYnRBX2Trtk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="box1">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/mwMOvx8kvSc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="box1">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/0Oz6CN7Sjuo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script>
+      $(".my-slider").slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: true,
+      });
+    </script>
+    <footer>
+      <div class="Copyright">
+        <h1>Copy Right 2022</h1>
+    </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
